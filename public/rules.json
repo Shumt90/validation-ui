@@ -1,0 +1,46 @@
+[
+  {
+    "ruleName": "sum",
+    "values": [
+      {
+        "source": "TABLE",
+        "key": "a"
+      },
+      {
+        "source": "TABLE",
+        "key": "b"
+      },
+      {
+        "source": "TABLE",
+        "key": "c"
+      }
+    ],
+    "resultName": "sumOfABC",
+    "description": null,
+    "ruleType": "MUTATION"
+  },
+  {
+    "ruleName": "isNumeric",
+    "values": [
+      {
+        "source": "ENV",
+        "key": "sumOfABC"
+      }
+    ],
+    "resultName": null,
+    "description": null,
+    "ruleType": "CHECKER"
+  },
+  {
+    "ruleName": "isEmail",
+    "values": [
+      {
+        "source": "CONSTANT",
+        "key": "itIsTestOfEmail"
+      }
+    ],
+    "resultName": null,
+    "description": null,
+    "ruleType": "CHECKER"
+  }
+]
